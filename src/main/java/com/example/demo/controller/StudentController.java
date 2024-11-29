@@ -23,7 +23,7 @@ public class StudentController {
 	public void add(@RequestBody Student std) {
 		studentRepo.save(std);
 	}
-	@GetMapping("/")
+	@GetMapping("/get")
 	public List<Student> getAll(){
 		return studentRepo.findAll();
 	}
